@@ -1,0 +1,25 @@
+services:
+  finuserdb:
+    image: postgres
+    container_name: postgres-finuserdb
+    environment:
+      POSTGRES_DB: finuserdb
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: finuserdb
+    volumes:
+      - finuser-pg-data:/var/lib/postgresql/data
+    ports:
+      - '5433:5432'
+
+  # redis:
+  #   image: redis:7
+  #   container_name: redis
+  #   ports:
+  #     - "6379:6379"
+  #   restart: unless-stopped
+
+volumes:
+  finuser-pg-data:
+
+
+  

@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: fintechy-microservices-user-service-config
+  namespace: fintechy-microservices-dev
+data:
+  DB_ADDR: "postgres://admin:finuserdb@localhost:5433/finuserdb?sslmode=disable"
+  PORT: "8100"
