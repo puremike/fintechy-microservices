@@ -1,4 +1,7 @@
+
 # 💳 Fintech Event-Driven Microservices Platform
+
+## **....................WILL UPDATE AS THE PROJECT PROGRESSES....................**
 
 ## 🧠 Overview
 An event-driven digital wallet platform that enables users to send and receive money, powered by a ledger-based transaction system and real-time notifications.
@@ -99,27 +102,6 @@ The **Notification Service** acts as the bridge between backend events and the e
 - **CD:**  
   - Automated Kubernetes deployment  
   - Rollback strategies  
-
----
-
-## 📁 Project Structure
-
-/fintech-platform
-├── apps/
-│ ├── user-service/ # Identity & Accounts
-│ ├── payment-service/ # Logic & Validation
-│ ├── transaction-service/ # Immutable Ledger
-│ └── notification-service/ # WebSockets & Redis
-├── internal/
-│ ├── logger/ # Structured JSON logging
-│ ├── config/ # Environment management
-│ └── events/ # Shared event definitions
-├── deployments/
-│ ├── docker-compose.yml # Local dev stack
-│ └── k8s/ # Production manifests
-├── scripts/ # Utility scripts
-└── Makefile # Build and run shortcuts
-
 
 ---
 
