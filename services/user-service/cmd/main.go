@@ -7,7 +7,7 @@ import (
 	"os/signal"
 	"syscall"
 
-	utils "github.com/puremike/fintechy-microservices/shared/utils"
+	"github.com/puremike/fintechy-microservices/shared/utils"
 
 	grpcserver "google.golang.org/grpc"
 )

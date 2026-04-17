@@ -70,6 +70,8 @@ func route() http.Handler {
 
 	g := gin.Default()
 
+	g.Use(correlationIDMiddleware)
+
 	g.GET("/check", func(c *gin.Context) {
 		c.JSON(http.StatusOK, gin.H{"status": "API Gateway is healthy"})
 	})
